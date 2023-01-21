@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
-
+// Новый коммит 2
 public class homework1 {
     public static void main(String[] args) {
         Random number = new Random();
