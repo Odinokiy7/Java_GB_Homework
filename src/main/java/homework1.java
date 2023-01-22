@@ -32,7 +32,7 @@ public class homework1 {
         for (int i = 0; i < arrayListMultiples.size(); i++) {
             m1[i] = arrayListMultiples.get(i);
         }
-        System.out.println("Кратные n числа в диапазоне от i до Short.MAX_VALUE: \n" + Arrays.toString(m1) + "\n\n");
+        System.out.println("Кратные n числа в диапазоне от i до Short.MAX_VALUE: " + Arrays.toString(m1) + "\n");
 
         ArrayList<Integer> arrayListNonMultiples = new ArrayList<>();
         for (int i = Short.MIN_VALUE; i < valueOf_i; i++) {
@@ -46,6 +46,6 @@ public class homework1 {
         for (int i = 0; i < arrayListNonMultiples.size(); i++) {
             m2[i] = arrayListNonMultiples.get(i);
         }
-        System.out.println("Некратные n числа в диапазоне от Short.MIN_VALUE до i: \n" + Arrays.toString(m2) + "\n\n");
+        System.out.println("Некратные n числа в диапазоне от Short.MIN_VALUE до i: " + Arrays.toString(m2) + "\n");
     }
 }
