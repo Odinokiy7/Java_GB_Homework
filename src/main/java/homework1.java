@@ -34,6 +34,7 @@ public class homework1 {
         }
         System.out.println("Кратные n числа в диапазоне от i до Short.MAX_VALUE: " + Arrays.toString(m1) + "\n");
 
+
         ArrayList<Integer> arrayListNonMultiples = new ArrayList<>();
         for (int i = Short.MIN_VALUE; i < valueOf_i; i++) {
             if (i % valueOf_n != 0) {
