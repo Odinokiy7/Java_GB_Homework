@@ -20,6 +20,7 @@ public class homework1 {
         System.out.println("Short.MAX_VALUE = " + Short.MAX_VALUE);
         System.out.println("Short.MIN_VALUE = " + Short.MIN_VALUE);
 
+
         ArrayList<Integer> arrayListMultiples = new ArrayList<>();
         for (int i = valueOf_i; i < Short.MAX_VALUE; i++) {
             if (i % valueOf_n == 0) {
