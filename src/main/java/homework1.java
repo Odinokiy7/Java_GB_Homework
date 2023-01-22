@@ -1,6 +1,7 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
-// Новый коммит 2
+
 public class homework1 {
     public static void main(String[] args) {
         Random number = new Random();
@@ -19,21 +20,32 @@ public class homework1 {
         System.out.println("Short.MAX_VALUE = " + Short.MAX_VALUE);
         System.out.println("Short.MIN_VALUE = " + Short.MIN_VALUE);
 
-        int[] m1 = new int[Short.MAX_VALUE];
-        int[] m2 = new int[Short.MAX_VALUE];
-
+        ArrayList<Integer> arrayListMultiples = new ArrayList<>();
         for (int i = valueOf_i; i < Short.MAX_VALUE; i++) {
             if (i % valueOf_n == 0) {
-                m1[i] = i;
+                arrayListMultiples.add(i);
             }
         }
-        //System.out.println(Arrays.toString(m1));
+//        System.out.println(arrayList);
 
+        int[] m1 = new int[arrayListMultiples.size()];
+        for (int i = 0; i < arrayListMultiples.size(); i++) {
+            m1[i] = arrayListMultiples.get(i);
+        }
+        System.out.println("Кратные n числа в диапазоне от i до Short.MAX_VALUE: \n" + Arrays.toString(m1) + "\n\n");
+
+        ArrayList<Integer> arrayListNonMultiples = new ArrayList<>();
         for (int i = Short.MIN_VALUE; i < valueOf_i; i++) {
-            if (i % valueOf_n == 0) {
-                m2[i] = i;
+            if (i % valueOf_n != 0) {
+                arrayListNonMultiples.add(i);
             }
         }
-        System.out.println(Arrays.toString(m2));
+//        System.out.println(arrayListNonMultiples);
+
+        int[] m2 = new int[arrayListNonMultiples.size()];
+        for (int i = 0; i < arrayListNonMultiples.size(); i++) {
+            m2[i] = arrayListNonMultiples.get(i);
+        }
+        System.out.println("Некратные n числа в диапазоне от Short.MIN_VALUE до i: \n" + Arrays.toString(m2) + "\n\n");
     }
 }
