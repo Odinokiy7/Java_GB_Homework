@@ -16,9 +16,13 @@ public class homework2 {
 
 
 //2. Напишите программу, чтобы проверить, являются ли две данные строки вращением друг друга (вхождение в обратном порядке)
-        StringBuilder stringBuilder1 = new StringBuilder("ABC");
-        StringBuilder stringBuilder2 = new StringBuilder("CBA");
-        System.out.println(stringBuilder1.toString().equals(stringBuilder2.reverse().toString()));
+        String str3 = "AACD";
+        String str4 = "ACDA";
+        if ((str3.length() == str4.length()) && ((str3 + str3).contains(str4))) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
 
 
 //3. *Напишите программу, чтобы перевернуть строку с помощью рекурсии.
